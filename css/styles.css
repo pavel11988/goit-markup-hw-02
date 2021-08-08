@@ -20,10 +20,13 @@
 }
 
 .header-logo:hover,
-.footer-logo:hover,
-.header-logo:focus,
-.footer-logo:focus {
+.header-logo:focus {
   color: var(--text-black-color);
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  color: var(--white-color);
 }
 
 .header-nav .nav-li,
