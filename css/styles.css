@@ -1,0 +1,134 @@
+:root {
+  --background-dark-gray-color: #2f303a;
+  --background-gray-color: #f5f4fa;
+  --text-blue-color: #2196f3;
+  --text-black-color: #212121;
+  --text-gray-color: #757575;
+  --text-color-white-transparent: rgba(255, 255, 255, 0.6);
+  --white-color: #ffffff;
+}
+
+/* ----------------------------------------------------------------------------
+Шапка и футер (они одинаковые на всех страницах, поэтому вынесем их отдельно)
+-----------------------------------------------------------------------------*/
+
+/* Шапка */
+
+.header-logo,
+.footer-logo {
+  color: var(--text-blue-color);
+}
+
+.header-logo:hover,
+.footer-logo:hover,
+.header-logo:focus,
+.footer-logo:focus {
+  color: var(--text-black-color);
+}
+
+.header-nav .nav-li,
+.header-contacts .contacts-li {
+  color: var(--text-black-color);
+}
+
+.header-nav .nav-li:hover,
+.header-nav .nav-li:focus,
+.header-contacts .contacts-li:hover,
+.header-contacts .contacts-li:focus,
+.footer-adreess a:hover,
+.footer-adreess a:focus {
+  color: var(--text-blue-color);
+}
+
+.header-nav .nav-li-current {
+  color: var(--text-blue-color);
+}
+
+/* Футер */
+
+.footer {
+  background-color: var(--background-dark-gray-color);
+}
+
+.footer-adreess {
+  color: var(--white-color);
+}
+
+.footer-adreess a {
+  color: var(--text-color-white-transparent);
+}
+
+/* --------------------------------------------------------------------------- 
+    Главная страница - Студия (index.html)
+-----------------------------------------------------------------------------*/
+
+/* Основной контент */
+
+/* "Герой" */
+
+.hero {
+  background-color: var(--background-dark-gray-color);
+}
+
+.hero h1 {
+  color: var(--white-color);
+}
+
+.hero .button {
+  background-color: var(--text-blue-color);
+  color: var(--white-color);
+}
+
+/* Секция: Преимущества организации */
+
+.section h2 {
+  color: var(--text-black-color);
+}
+
+.main-advantages h3 {
+  color: var(--text-black-color);
+}
+
+.main-advantages p {
+  color: var(--text-gray-color);
+}
+
+/* Секция: Чем мы занимаемся?*/
+
+/* Тут пока пусто */
+
+/* Секция: Наша команда */
+
+.personal {
+  background-color: var(--background-gray-color);
+}
+
+.personal-ul p {
+  color: var(--text-gray-color);
+}
+
+/* ---------------------------------------------------------------------------  
+Вторая страница - Портфолио (portfolio.html) 
+-----------------------------------------------------------------------------*/
+
+/* Фильтр */
+
+.filter .button {
+  background-color: var(--background-gray-color);
+  color: var (--text-black-color);
+}
+.filter .button:hover,
+.filter .button:focus {
+  background-color: var(--text-blue-color);
+  color: var(--white-color);
+}
+
+/* Проэкты */
+
+.projects h3 {
+  color: var(--text-black-color);
+}
+
+.projects p {
+  color: var(--text-gray-color);
+}
