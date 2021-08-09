@@ -2,21 +2,38 @@
   --background-dark-gray-color: #2f303a;
   --background-gray-color: #f5f4fa;
   --text-blue-color: #2196f3;
-  --text-black-color: #212121;
+  --text-black-color: #212121; /* Primary text color */
   --text-gray-color: #757575;
   --text-color-white-transparent: rgba(255, 255, 255, 0.6);
-  --white-color: #ffffff;
+  --white-color: #ffffff; /* Primaty background c  */
 }
 
-/* ----------------------------------------------------------------------------
-Шапка и футер (они одинаковые на всех страницах, поэтому вынесем их отдельно)
------------------------------------------------------------------------------*/
+body {
+  color: var(--text-black-color);
+  background-color: var(--white-color);
 
-/* Шапка */
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Шапка и Футер*/
 
 .header-logo,
 .footer-logo {
   color: var(--text-blue-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
 
 .header-logo:hover,
@@ -29,25 +46,29 @@
   color: var(--white-color);
 }
 
-.header-nav .nav-li,
-.header-contacts .contacts-li {
-  color: var(--text-black-color);
+.nav-li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.current {
+  color: var(--text-blue-color);
+}
+
+.contacts-li {
+  color: var(--text-gray-color);
 }
 
 .header-nav .nav-li:hover,
 .header-nav .nav-li:focus,
 .header-contacts .contacts-li:hover,
 .header-contacts .contacts-li:focus,
-.footer-adreess a:hover,
-.footer-adreess a:focus {
+.footer-li:hover,
+.footer-li:focus {
   color: var(--text-blue-color);
 }
-
-.header-nav .nav-li-current {
-  color: var(--text-blue-color);
-}
-
-/* Футер */
 
 .footer {
   background-color: var(--background-dark-gray-color);
@@ -55,15 +76,14 @@
 
 .footer-adreess {
   color: var(--white-color);
+
+  font-size: 14px;
+  line-height: 1.7;
 }
 
-.footer-adreess a {
+.footer-li {
   color: var(--text-color-white-transparent);
 }
-
-/* --------------------------------------------------------------------------- 
-    Главная страница - Студия (index.html)
------------------------------------------------------------------------------*/
 
 /* Основной контент */
 
@@ -73,65 +93,100 @@
   background-color: var(--background-dark-gray-color);
 }
 
-.hero h1 {
+.hero .hero-title {
   color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.hero .button {
+.hero-button {
   background-color: var(--text-blue-color);
+  color: var(--white-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--background-gray-color);
+  color: var(--text-black-color);
+}
+
+.hero-button:active {
+  background-color: var(--background-dark-gray-color);
   color: var(--white-color);
 }
 
 /* Секция: Преимущества организации */
 
-.section h2 {
-  color: var(--text-black-color);
+.main-advantages .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
-.main-advantages h3 {
-  color: var(--text-black-color);
-}
-
-.main-advantages p {
+.main-advantages .description {
   color: var(--text-gray-color);
+
+  font-size: 14px;
+  line-height: 1.7;
 }
 
-/* Секция: Чем мы занимаемся?*/
-
-/* Тут пока пусто */
-
-/* Секция: Наша команда */
-
+/* Секция: Наша команда + проэкты с Портфолио (portfolio.html) */
 .personal {
   background-color: var(--background-gray-color);
 }
 
-.personal-ul p {
-  color: var(--text-gray-color);
+.personal-list .title,
+.personal-list .description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
 }
 
-/* ---------------------------------------------------------------------------  
-Вторая страница - Портфолио (portfolio.html) 
------------------------------------------------------------------------------*/
+.personal-list .description,
+.projects .description {
+  color: var(--text-gray-color);
+
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.projects .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
 
 /* Фильтр */
 
 .filter .button {
   background-color: var(--background-gray-color);
   color: var (--text-black-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
 }
+
 .filter .button:hover,
 .filter .button:focus {
   background-color: var(--text-blue-color);
   color: var(--white-color);
-}
-
-/* Проэкты */
-
-.projects h3 {
-  color: var(--text-black-color);
-}
-
-.projects p {
-  color: var(--text-gray-color);
 }
