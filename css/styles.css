@@ -24,7 +24,19 @@ h2 {
   text-align: center;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* Шапка и Футер*/
+
+.studio-header {
+  color: var(--text-black-color);
+}
+
+.studio-footer {
+  color: var(--white-color);
+}
 
 .header-logo,
 .footer-logo {
@@ -34,16 +46,7 @@ h2 {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-}
-
-.header-logo:hover,
-.header-logo:focus {
-  color: var(--text-black-color);
-}
-
-.footer-logo:hover,
-.footer-logo:focus {
-  color: var(--white-color);
+  text-decoration: none;
 }
 
 .nav-li {
@@ -51,6 +54,7 @@ h2 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .current {
@@ -59,6 +63,7 @@ h2 {
 
 .contacts-li {
   color: var(--text-gray-color);
+  text-decoration: none;
 }
 
 .header-nav .nav-li:hover,
@@ -72,6 +77,7 @@ h2 {
 
 .footer {
   background-color: var(--background-dark-gray-color);
+  text-decoration: none;
 }
 
 .footer-adreess {
@@ -83,6 +89,7 @@ h2 {
 
 .footer-li {
   color: var(--text-color-white-transparent);
+  text-decoration: none;
 }
 
 /* Основной контент */
